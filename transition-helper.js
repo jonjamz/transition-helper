@@ -40,7 +40,7 @@ var genHooks = function (insert, remove, insertClass, removeClass) {
     };
   }
   
-  hooks.moveElement: function(node, next) {
+  hooks.moveElement = function(node, next) {
     hooks.removeElement(node);
     hooks.insertElement(node, next);
   }
